@@ -4,9 +4,9 @@ import ch.heigvd.res.pizza.domain.IProduct;
 
 import java.math.BigDecimal;
 
-public class FourSeason implements IProduct {
+public class FourCheese implements IProduct {
 
-  public final static String NAME = "Four Season";
+  public final static String NAME = "Four Cheese";
   public final static BigDecimal PRICE = new BigDecimal(18.0);
 
   @Override
