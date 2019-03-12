@@ -7,6 +7,7 @@ import java.math.BigDecimal;
 public class Fuitmer implements IProduct {
 
     public final static String NAME = "Fuitmer Pizza";
+    
     public final static BigDecimal PRICE = new BigDecimal(12);
 
     public String getName() {
