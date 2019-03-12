@@ -7,6 +7,8 @@ import java.math.BigDecimal;
 public class Procioto implements IProduct {
 
     public final static String NAME = "Procioto Pizza";
+
+    
     public final static BigDecimal PRICE = new BigDecimal(12);
 
     public String getName() {

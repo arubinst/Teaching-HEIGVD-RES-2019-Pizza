@@ -13,6 +13,7 @@ public class Fuitmer implements IProduct {
         return NAME;
     }
 
+
     public BigDecimal getPrice(){
         return PRICE;
     }
