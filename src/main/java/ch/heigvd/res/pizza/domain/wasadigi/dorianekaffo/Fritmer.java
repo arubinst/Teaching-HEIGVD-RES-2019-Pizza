@@ -1,21 +1,32 @@
-package ch.heigvd.res.pizza.domain.wasadigi;
+package ch.heigvd.res.pizza.domain.dorianekaffo;
 
-import ch.heigvd.res.pizza.domain.IProduct;
+import ch.heigvd.res.pizza.domain.Pizzaiolo;
+import ch.heigvd.res.pizza.protocol.OrderRequest;
+import ch.heigvd.res.pizza.protocol.OrderResponse;
+import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
 
-public class Fruitmer implements IProduct {
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-  public final static String NAME = "Fruitmer";
-  public final static BigDecimal PRICE = new BigDecimal(16.0);
+class Fitmer {
 
-  @Override
-  public String getName() {
-    return NAME;
+  @Test
+  void thePriceAndNameForFitmerShouldBeCorrect() {
+    Fitmer beer = new Fitmer();
+    assertEquals(Fitmer.getName(), Fitmer.NAME);
+    assertEquals(beer.getPrice(), Fitmer.PRICE);
   }
 
-  @Override
-  public BigDecimal getPrice() {
-    return PRICE;
+  @Test
+  void aPizzaioloShouldAcceptAnOrderForFitmer() {
+    Pizzaiolo dodo = new Pizzaiolo();
+    String productName = "ch.heigvd.res.pizza.domain.tdorianekaffo.Fitmer";
+    int numberOfPizzas = 2;
+    OrderRequest request = new OrderRequest(numberOfPizzas, productName);
+    OrderResponse response = dodo.order(request);
+    BigDecimal expectedTotalPrice = Fitmer.PRICE.multiply(new BigDecimal(numberOfPizzas));
+    assertEquals(expectedTotalPrice, response.getTotalPrice());
   }
+
 }
