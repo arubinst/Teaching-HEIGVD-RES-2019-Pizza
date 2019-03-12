@@ -9,5 +9,6 @@ public class GreetingsResponse implements IMessage {
 
 
   public Object getText() {
+    return text;
   }
 }

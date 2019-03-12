@@ -5,6 +5,8 @@ import ch.heigvd.res.pizza.protocol.GreetingsRequest;
 import ch.heigvd.res.pizza.protocol.GreetingsResponse;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 class TataPizzaTest {
 
   @Test
