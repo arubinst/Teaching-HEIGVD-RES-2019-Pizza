@@ -12,14 +12,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class CalzoneTest {
 
     @Test
-    void thePriceAndNameForMargheritaShouldBeCorrect() {
+    void thePriceAndNameForCalzoneShouldBeCorrect() {
         Calzone calzone = new Calzone();
         assertEquals(calzone.getName(), Calzone.NAME);
         assertEquals(calzone.getPrice(), Calzone.PRICE);
     }
 
     @Test
-    void aPizzaioloShouldAcceptAnOrderForMargherita() {
+    void aPizzaioloShouldAcceptAnOrderForCalzone() {
         Pizzaiolo mario = new Pizzaiolo();
         String productName = "ch.heigvd.res.pizza.domain.dwimcore.Calzone";
         int numberOfPizzas = 2;
