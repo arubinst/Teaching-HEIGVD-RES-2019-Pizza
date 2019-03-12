@@ -7,4 +7,7 @@ public class GreetingsResponse implements IMessage {
 
   private final String text;
 
+
+  public Object getText() {
+  }
 }
