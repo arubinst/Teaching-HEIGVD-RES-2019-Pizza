@@ -1,4 +1,4 @@
-package ch.heigvd.res.pizza.domain.dorianekaffo;
+package ch.heigvd.res.pizza.domain.wasadigi;
 
 import ch.heigvd.res.pizza.domain.IProduct;
 
@@ -6,16 +6,16 @@ import java.math.BigDecimal;
 
 public class Fruitmer implements IProduct {
 
-    public final static String NAME = "Fuitmer";
-    public final static BigDecimal PRICE = new BigDecimal(16.0);
+  public final static String NAME = "Fruitmer";
+  public final static BigDecimal PRICE = new BigDecimal(16.0);
 
-    @Override
-    public String getName() {
-        return NAME;
-    }
+  @Override
+  public String getName() {
+    return NAME;
+  }
 
-    @Override
-    public BigDecimal getPrice() {
-        return PRICE;
-    }
+  @Override
+  public BigDecimal getPrice() {
+    return PRICE;
+  }
 }
