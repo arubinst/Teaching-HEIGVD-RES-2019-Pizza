@@ -9,13 +9,13 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Fitmer {
+class Fritmer {
 
   @Test
   void thePriceAndNameForFitmerShouldBeCorrect() {
-    Fitmer beer = new Fitmer();
-    assertEquals(Fitmer.getName(), Fitmer.NAME);
-    assertEquals(beer.getPrice(), Fitmer.PRICE);
+    Fritmer beer = new Fritmer();
+    assertEquals(Fritmer.getName(), Fritmer.NAME);
+    assertEquals(beer.getPrice(), Fritmer.PRICE);
   }
 
   @Test
@@ -25,7 +25,7 @@ class Fitmer {
     int numberOfPizzas = 2;
     OrderRequest request = new OrderRequest(numberOfPizzas, productName);
     OrderResponse response = dodo.order(request);
-    BigDecimal expectedTotalPrice = Fitmer.PRICE.multiply(new BigDecimal(numberOfPizzas));
+    BigDecimal expectedTotalPrice = Fritmer.PRICE.multiply(new BigDecimal(numberOfPizzas));
     assertEquals(expectedTotalPrice, response.getTotalPrice());
   }
 
