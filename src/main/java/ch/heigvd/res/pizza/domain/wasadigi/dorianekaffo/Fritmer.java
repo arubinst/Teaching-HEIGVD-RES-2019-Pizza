@@ -21,7 +21,7 @@ class Fritmer {
   @Test
   void aPizzaioloShouldAcceptAnOrderForFitmer() {
     Pizzaiolo dodo = new Pizzaiolo();
-    String productName = "ch.heigvd.res.pizza.domain.tdorianekaffo.Fitmer";
+    String productName = "ch.heigvd.res.pizza.domain.dorianekaffo.Fitmer";
     int numberOfPizzas = 2;
     OrderRequest request = new OrderRequest(numberOfPizzas, productName);
     OrderResponse response = dodo.order(request);
