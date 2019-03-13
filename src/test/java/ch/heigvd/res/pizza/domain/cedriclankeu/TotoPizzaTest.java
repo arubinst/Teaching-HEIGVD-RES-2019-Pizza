@@ -1,12 +1,13 @@
-package ch.heigvd.res.pizza.domain;
+package ch.heigvd.res.pizza.domain.cedriclankeu;
 
+import ch.heigvd.res.pizza.domain.Pizzaiolo;
 import ch.heigvd.res.pizza.protocol.GreetingsRequest;
 import ch.heigvd.res.pizza.protocol.GreetingsResponse;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class PizzaioloTest {
+class TotoPizzaTest {
 
   @Test
   void aPizzaioloShouldReplyToGreetings() {
